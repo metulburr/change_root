@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 
 import subprocess
 import sys
@@ -6,6 +5,7 @@ import sys
 def execute(string):
 	proc = subprocess.Popen(string.split())
 	proc.wait()
+	print(string)
 
 NUMBER = input('input integer for /dev/sda: ')
 try:
