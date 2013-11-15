@@ -1,4 +1,3 @@
-
 import subprocess
 import sys
 
@@ -27,6 +26,9 @@ ufour = 'sudo umount /mnt'
 
 print('changing to root of /dev/sda{}'.format(NUMBER))
 print('"exit" to unmount')
+print('command to reinstall-update grub')
+print('sudo grub-install /dev/sda')
+print('sudo update-grub')
 execute(one)
 execute(two)
 execute(three)
